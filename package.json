@@ -1,0 +1,67 @@
+{
+  "name": "angular-spa-starter",
+  "version": "0.0.1",
+  "description": "Angular 4 single page application starter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ng serve --open",
+    "compodoc": "./node_modules/.bin/compodoc -p src/tsconfig.app.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midhunadarvin/angular-spa-starter.git"
+  },
+  "keywords": [
+    "angular",
+    "spa",
+    "typescript",
+    "angular-starter"
+  ],
+  "author": "midhunadarvin@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midhunadarvin/angular-spa-starter/issues"
+  },
+  "homepage": "https://github.com/midhunadarvin/angular-spa-starter#readme",
+  "dependencies": {
+    "@agm/core": "^1.0.0-beta.0",
+    "@angular/animations": "^5.0.0",
+    "@angular/common": "^5.0.0",
+    "@angular/compiler": "^5.0.0",
+    "@angular/core": "^5.0.0",
+    "@angular/forms": "^5.0.0",
+    "@angular/http": "^5.0.0",
+    "@angular/platform-browser": "^5.0.0",
+    "@angular/platform-browser-dynamic": "^5.0.0",
+    "@angular/platform-server": "^5.0.0",
+    "@angular/router": "^5.0.0",
+    "bootstrap": "4.0.0-beta.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.2.1",
+    "ngx-loading": "^1.0.14",
+    "ngx-logger": "^1.1.2",
+    "ngx-modal-dialog": "^1.1.1",
+    "popper.js": "^1.12.9",
+    "rxjs": "^5.5.2",
+    "tether": "1.4.0",
+    "zone.js": "^0.8.4"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.5.3",
+    "@angular/compiler-cli": "^5.0.0",
+    "@ngtools/webpack": "^1.8.3",
+    "@types/googlemaps": "^3.26.20",
+    "angular-tslint-rules": "^1.1.0",
+    "codelyzer": "^4.0.2",
+    "htmlhint": "^0.9.13",
+    "script-loader": "^0.7.0",
+    "stylelint": "^8.4.0",
+    "stylelint-config-recommended": "^2.0.1",
+    "stylelint-config-recommended-scss": "^3.0.0",
+    "stylelint-scss": "^2.2.0",
+    "tslint": "^5.9.1",
+    "tslint-angular": "^1.0.0",
+    "typescript": "^2.6.2"
+  }
+}

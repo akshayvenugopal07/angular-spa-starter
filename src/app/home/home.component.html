@@ -1,0 +1,93 @@
+<div class="container-fluid">
+
+  <div class="row justify-content-end">
+    
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+      <button type="button" class="btn btn-info navbar-btn w-100" (click)="openNewDialog()">
+        <span>Open Dialog</span>
+      </button>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+      <button type="button" class="btn btn-info navbar-btn w-100" (click)="globalService.toggleSidebar()">
+        <span>Toggle Sidebar</span>
+      </button>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
+      <button type="button" class="btn btn-danger navbar-btn w-100" (click)="globalService.toggleSpinner()">
+        <span>Show Spinner</span>
+      </button>
+    </div>
+  </div>
+  
+  <div class="row my-3" *ngIf="isLoading">
+    <div class="col-12">
+      <div class="card">
+        <h4 class="card-header">Fetching Github Repos...</h4>
+        <div class="card-block mx-auto">
+          <i class="fa fa-circle-o-notch fa-spin fa-3x"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row my-3">
+    <div class="col-lg-6 my-3" *ngFor="let item of repos;let i = index;">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{item.name}}</h4>
+          <p class="card-text">{{item.full_name}}</p>
+          <a [href]="item.html_url" target="_blank" class="btn btn-primary">Github link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card" *ngIf="!isEditing">
+    <h4 class="card-header">Form</h4>
+    <div class="card-body">
+      <form>
+        <div class="row">
+          <div class="col">
+            <input type="text" class="form-control" placeholder="First name"/>
+          </div>
+          <div class="col">
+            <input type="text" class="form-control" placeholder="Last name"/>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" for="formGroupExampleInput">Example label</label>
+          <input type="text" class="form-control"  placeholder="Example input"/>
+        </div>
+        <div class="form-group">
+          <label class="col-form-label" for="formGroupExampleInput2">Another label</label>
+          <input type="text" class="form-control" placeholder="Another input"/>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Example select</label>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect2">Example multiple select</label>
+          <select multiple class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Example textarea</label>
+          <textarea class="form-control" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
