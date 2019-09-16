@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/midhunadarvin/angular-spa-starter.git"
+    "url": "git+https://github.com/akshayvenugopal07/angular-spa-starter.git"
   },
   "keywords": [
     "angular",
@@ -18,12 +18,12 @@
     "typescript",
     "angular-starter"
   ],
-  "author": "midhunadarvin@gmail.com",
-  "license": "ISC",
+  "author": "akshayvenugopal007@gmail.com",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/midhunadarvin/angular-spa-starter/issues"
+    "url": "https://github.com/akshayvenugopal07/angular-spa-starter/issues"
   },
-  "homepage": "https://github.com/midhunadarvin/angular-spa-starter#readme",
+  "homepage": "https://github.com/akshayvenugopal07/angular-spa-starter#readme",
   "dependencies": {
     "@agm/core": "^1.0.0-beta.0",
     "@angular/animations": "^5.0.0",

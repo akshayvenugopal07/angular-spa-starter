@@ -34,4 +34,4 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 
 ### Author
-* [Midhun A Darvin](https://github.com/midhunadarvin)
+* [Akshay Venugopal](https://github.com/akshayvenugopal07)
