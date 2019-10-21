@@ -1,0 +1,21 @@
+<div class="custom-typeahead">
+  <div>
+    <span>Powered By Google</span>
+    <input type="text" class="form-control" placeholder="Search" (ngModelChange)="searchForLocations()" [(ngModel)]="searchText" />
+  </div>
+  <div *ngIf="resultsPresent && searchText != ''">
+    <ul class="list-group">
+      <li class="list-group-item cursor-pointer" *ngIf="noRecords">No Locations Found</li>
+      <ng-container *ngFor="let saved of savedList">
+        <li class="list-group-item cursor-pointer saved-item" (click)="selectItem(saved)">
+          <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <span>{{saved.name}}</span>
+        </li>
+      </ng-container>
+      <ng-container *ngFor="let location of locationList">
+        <li class="list-group-item cursor-pointer" (click)="selectItem(location)" *ngIf="!noRecords">{{location.name}}
+        </li>
+      </ng-container>
+    </ul>
+  </div>
+</div>

@@ -1,8 +1,13 @@
-.table td, .table th {
-   text-align: center;
-   width: 25%;  
+.table td,
+.table th {
+  text-align: center;
+  width: 25%;
 }
 
 agm-map {
   height: 300px;
+}
+
+.p-5 {
+  padding: 5%;
 }

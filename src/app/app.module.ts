@@ -11,13 +11,15 @@ import { LayoutComponent } from './layout/layout.component';
 import { DataService } from './services/data.service';
 import { GlobalService } from './services/global.service';
 import { TokenInterceptor } from './auth/token.interceptor';
+import { LocationTypeaheadComponent } from './location-typeahead/location-typeahead.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		HomeComponent,
 		AboutComponent,
-		LayoutComponent
+		LayoutComponent,
+		LocationTypeaheadComponent
 	],
 	imports: [
 		AppRoutingModule,
